@@ -1,0 +1,16 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'chatbot/styles.css' %}">
+</head>
+<body>
+    <div id="time">{{ current_time }}</div>
+    <div id="chat">
+        <div id="messages"></div>
+        <input type="text" id="user_message" />
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="clearChat()">Clear</button>
+    </div>
+
+    <script src="{% static 'chatbot/chat.js' %}"></script>
+</body>
+</html>
